@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vulnerable Login</title>
+</head>
+<body>
+  <h2>Login</h2>
+
+  <input id="username" placeholder="Username" />
+  <input id="password" placeholder="Password" type="password" />
+  <button onclick="login()">Login</button>
+
+  <p id="result"></p>
+
+  <script>
+    async function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      const response = await fetch("http://localhost:3000/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password })
+      });
+
+      const data = await response.json();
+      document.getElementById("result").innerText = data.message;
+    }
+  </script>
+</body>
+</html>
