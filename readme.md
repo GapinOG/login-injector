@@ -1,15 +1,13 @@
 This is the file structure of the project.
-
-login-injector/n
-backend/n
-    server.js/n
-    db.js/n
-    package.js/n
-    package-lock.js/n
-frontend/n
-    index.html/n
-database/n
-    init.sql/n
+login-injector/
+├── backend/
+│ ├── server.js
+│ ├── db.js
+│ └── package.json
+├── frontend/
+│ └── index.html
+└── database/
+└── init.sql
 
 This is the web application to test vulnerabilities
 Front end uses HTML
@@ -39,6 +37,7 @@ username: admin
 password: ' OR '1'='1' -- 
 
 <img width="544" height="228" alt="image" src="https://github.com/user-attachments/assets/ff721bc8-9931-4371-b4e7-62e5cbac2e4f" />
+
 
 
 
