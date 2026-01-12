@@ -1,3 +1,18 @@
+This is the file structure of the project.
+
+vulnerable-app/
+│
+├── backend/
+│   ├── server.js
+│   ├── db.js
+│   └── package.json
+│
+├── frontend/
+│   └── index.html
+│
+└── database/
+    └── init.sql
+
 This is the web application to test vulnerabilities
 Front end uses HTML
 Backend uses Node js
@@ -26,3 +41,4 @@ username: admin
 password: ' OR '1'='1' -- 
 
 <img width="544" height="228" alt="image" src="https://github.com/user-attachments/assets/ff721bc8-9931-4371-b4e7-62e5cbac2e4f" />
+
